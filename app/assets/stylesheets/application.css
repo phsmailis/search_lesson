@@ -13,3 +13,15 @@
  *= require_tree .
  *= require_self
  */
+
+ .artist {
+   background-color: lightblue;
+ }
+
+ .release {
+   background-color: cyan;
+ }
+
+ .track {
+   background-color: green;
+ }

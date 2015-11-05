@@ -1,0 +1,15 @@
+<h3>Search Results</h3>
+
+<h3>You searched for "<%= @term %>"</h3>
+
+<% if @results.present? %>
+<h3>Here are the results:</h3>
+
+<ol>
+<% @results.each do |result| %>
+  <li><%= link_to result.display_name, result %>
+<% end %>
+</ol>
+<% else %>
+  <h3>Your search did not send back results</h3>
+<% end %>
